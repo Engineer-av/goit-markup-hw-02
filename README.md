@@ -1,2 +1,2 @@
-# goit-markup-hw-02
-Hometask #2
+# goit-markup-hw-01
+hometask #1 GoIT
