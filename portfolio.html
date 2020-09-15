@@ -1,108 +1,194 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Веб-студия</title>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <!-- HEADER -->
-    <header>
-        <nav>
-            <a lang="en" href="/">
-                WebStudio
-            </a>
-            <ul>
-                <li><a href="">Студия</a></li>
-                <li><a href="">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
-        </nav>
-        <address>
-            <ul>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+    <header class="header">
+      <nav class="navigation">
+        <a class="logo link" lang="en" href="/">
+          <span class="logo-acent">Web</span>Studio
+        </a>
+        <ul class="navigation-list list">
+          <li class="navigation-list-item">
+            <a class="navigation-list-link link" href="./index.html">Студия</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link link" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="address">
+        <ul class="adsress-list list">
+          <li>
+            <a class="header-mail-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="header-tel-link link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </address>
     </header>
     <main>
-        <!-- OUR WORKS -->
-        <section>
-            <h1>Наши работы</h1>
-            <ul>
-                <li><button type="button">Все</button></li>
-                <li><button type="button">Веб-сайты</button></li>
-                <li><button type="button">Приложения</button></li>
-                <li><button type="button">Дизайн</button></li>
-                <li><button type="button">Маркетинг</button></li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="./images/our-works/img-1.jpg" width="370" height="294" alt="Страница веб-сайта">
-                    <h2>Технокряк</h2>
-                    <p>Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/our-works/img-2.jpg" width="370" height="294" alt="Постер Нью Орлеан">
-                    <h2>Постер <span lang="en">New Orlean vs Golden Star</span> </h2>
-                    <p>Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/our-works/img-3.jpg" width="370" height="294" alt="Лого ресторана Си фуд">
-                    <h2>Ресторан <span lang="en">Seafood</span> </h2>
-                    <p>Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/our-works/img-4.jpg" width="370" height="294" alt="Наушники">
-                    <h2>Проект <span lang="en">Prime</span> </h2>
-                    <p>Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/our-works/img-5.jpg" width="370" height="294" alt="Две коробки">
-                    <h2>Проект <span lang="en">Boxes</span> </h2>
-                    <p>Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/our-works/img-6.jpg" width="370" height="294"
-                        alt="Страница веб-сайта инсперация">
-                    <h2 lang="en">Inspiration has no Borders</h2>
-                    <p>Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/our-works/img-7.jpg" width="370" height="294" alt="Открытая книга">
-                    <h2>Издание <span lang="en">Limited Edition</span> </h2>
-                    <p>Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/our-works/img-8.jpg" width="370" height="294" alt="Белая этикетка ">
-                    <h2>Проект <span lang="en">LAB</span> </h2>
-                    <p>Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/our-works/img-9.jpg" width="370" height="294" alt="Человек печатает на ноутбуке">
-                    <h2 lang="en">Growing Business</h2>
-                    <p>Приложение</p>
-                </li>
-            </ul>
-        </section>
+      <!-- OUR WORKS -->
+      <section class="works">
+        <h1 class="title">Наши работы</h1>
+        <ul>
+          <li><button class="filter-btn" type="button">Все</button></li>
+          <li><button class="filter-btn" type="button">Веб-сайты</button></li>
+          <li><button class="filter-btn" type="button">Приложения</button></li>
+          <li><button class="filter-btn" type="button">Дизайн</button></li>
+          <li><button class="filter-btn" type="button">Маркетинг</button></li>
+        </ul>
+        <ul class="list">
+          <li>
+            <img
+              src="./images/our-works/img-1.jpg"
+              width="370"
+              height="294"
+              alt="Страница веб-сайта"
+            />
+            <h2 class="works-subtitle">Технокряк</h2>
+            <p class="works-description">Веб-сайт</p>
+          </li>
+          <li>
+            <img
+              src="./images/our-works/img-2.jpg"
+              width="370"
+              height="294"
+              alt="Постер Нью Орлеан"
+            />
+            <h2 class="works-subtitle">
+              Постер <span lang="en">New Orlean vs Golden Star</span>
+            </h2>
+            <p class="works-description">Дизайн</p>
+          </li>
+          <li>
+            <img
+              src="./images/our-works/img-3.jpg"
+              width="370"
+              height="294"
+              alt="Лого ресторана Си фуд"
+            />
+            <h2 class="works-subtitle">
+              Ресторан <span lang="en">Seafood</span>
+            </h2>
+            <p class="works-description">Приложение</p>
+          </li>
+          <li>
+            <img
+              src="./images/our-works/img-4.jpg"
+              width="370"
+              height="294"
+              alt="Наушники"
+            />
+            <h2 class="works-subtitle">Проект <span lang="en">Prime</span></h2>
+            <p class="works-description">Маркетинг</p>
+          </li>
+          <li>
+            <img
+              src="./images/our-works/img-5.jpg"
+              width="370"
+              height="294"
+              alt="Две коробки"
+            />
+            <h2 class="works-subtitle">Проект <span lang="en">Boxes</span></h2>
+            <p class="works-description">Приложение</p>
+          </li>
+          <li>
+            <img
+              src="./images/our-works/img-6.jpg"
+              width="370"
+              height="294"
+              alt="Страница веб-сайта инсперация"
+            />
+            <h2 class="works-subtitle" lang="en">Inspiration has no Borders</h2>
+            <p class="works-description">Веб-сайт</p>
+          </li>
+          <li>
+            <img
+              src="./images/our-works/img-7.jpg"
+              width="370"
+              height="294"
+              alt="Открытая книга"
+            />
+            <h2 class="works-subtitle">
+              Издание <span lang="en">Limited Edition</span>
+            </h2>
+            <p class="works-description">Дизайн</p>
+          </li>
+          <li>
+            <img
+              src="./images/our-works/img-8.jpg"
+              width="370"
+              height="294"
+              alt="Белая этикетка "
+            />
+            <h2 class="works-subtitle">Проект <span lang="en">LAB</span></h2>
+            <p class="works-description">Маркетинг</p>
+          </li>
+          <li>
+            <img
+              src="./images/our-works/img-9.jpg"
+              width="370"
+              height="294"
+              alt="Человек печатает на ноутбуке"
+            />
+            <h2 class="works-subtitle" lang="en">Growing Business</h2>
+            <p class="works-description">Приложение</p>
+          </li>
+        </ul>
+      </section>
     </main>
     <!-- FOOTER -->
-    <footer>
-        <a lang="en" href="/">
-            WebStudio
-        </a>
-        <address>
-            <ul>
-                <li>
-                    <a href="https://goo.gl/maps/MBdeFPrQzgyW4BPL6" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
-                </li>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+    <footer class="footer">
+      <a class="logo link" lang="en" href="/">
+        <span class="logo-acent">Web</span>Studio
+      </a>
+      <address class="address">
+        <ul class="list">
+          <li>
+            <a
+              class="footer-map-link link "
+              href="https://goo.gl/maps/MBdeFPrQzgyW4BPL6"
+              target="_blank"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+          </li>
+          <li>
+            <a class="footer-mail-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="footer-tel-link link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </address>
     </footer>
-</body>
-
+  </body>
 </html>
