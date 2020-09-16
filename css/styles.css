@@ -13,11 +13,11 @@ Roboto normal 400- text
   --logo-color: #000000;
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
 }
 
 body {
-  font-family: "Robot", sans-serif;
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
 }
 
 .list {
@@ -32,8 +32,12 @@ body {
   font-style: normal;
 }
 
+.header {
+  background-color: var(--primary-background-color);
+}
+
 .logo {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
@@ -67,6 +71,9 @@ body {
   color: var(--acent-color);
 }
 
+.navigation-list-link.current {
+  color: var(--acent-color);
+}
 .modal-btn {
   font-weight: 700;
   font-size: 16px;
@@ -86,6 +93,10 @@ body {
   color: var(--title-text-color);
 }
 /* ------------------------HERO------------------------ */
+.hero {
+  background-color: var(--footer-background-color);
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -93,12 +104,13 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(
-    --primary-text-color
-  ); /* change color on  var(--text-color-on-acent-background)*/
+  color: var(--text-color-on-acent-background);
 }
 
 /* ------------------------OUR ADVANTAGES------------------------ */
+.advantages {
+  background-color: var(--primary-background-color);
+}
 
 .advantages-subtitle {
   font-weight: 700;
@@ -117,7 +129,13 @@ body {
 }
 
 /* ------------------------WHAT WE DO------------------------ */
+.what-we-do {
+  background-color: var(--primary-background-color);
+}
 /* ------------------------OUR TEAM------------------------ */
+.team {
+  background-color: var(--secondary-background-color);
+}
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
@@ -136,6 +154,18 @@ body {
 }
 
 /* ------------------------FOOTER------------------------ */
+.footer {
+  background-color: var(--footer-background-color);
+}
+.footer-logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: var(--text-color-on-acent-background);
+}
+
 .footer-map-link,
 .footer-mail-link,
 .footer-tel-link {
@@ -145,15 +175,11 @@ body {
   letter-spacing: 0.03em;
 }
 .footer-map-link {
-  color: var(
-    --primary-text-color
-  ); /* change color on  var(--text-color-on-acent-background)*/
+  color: var(--text-color-on-acent-background);
 }
 .footer-mail-link,
 .footer-tel-link {
-  color: var(
-    --primary-text-color
-  ); /* change color on rgba(255, 255, 255, 0.6)*/
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-map-link:hover,
 .footer-map-link:focus,
@@ -164,6 +190,9 @@ body {
   color: var(--acent-color);
 }
 /* ------------------------ OUR WORKS------------------------ */
+.works {
+  background-color: var(--primary-background-color);
+}
 
 .filter-btn {
   font-style: normal;
